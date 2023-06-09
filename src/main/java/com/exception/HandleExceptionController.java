@@ -19,12 +19,12 @@ public class HandleExceptionController {
 		return new ResponseEntity<ErrorResponse>(res, HttpStatus.BAD_REQUEST);
 	}
 
-//	@ExceptionHandler
-//	public ResponseEntity<ErrorResponse> generalException(Exception e) {
-//		ErrorResponse res = new ErrorResponse();
-//		res.setStatus(HttpStatus.BAD_REQUEST.value());
-//		res.setMessage(e.getMessage());
-//		res.setTimestamp(System.currentTimeMillis());
-//		return new ResponseEntity<ErrorResponse>(res, HttpStatus.BAD_REQUEST);
-//	}
+	@ExceptionHandler
+	public ResponseEntity<ErrorResponse> generalException(Exception e) {
+		ErrorResponse res = new ErrorResponse();
+		res.setStatus(HttpStatus.BAD_REQUEST.value());
+		res.setMessage(e.getMessage());
+		res.setTimestamp(System.currentTimeMillis());
+		return new ResponseEntity<ErrorResponse>(res, HttpStatus.BAD_REQUEST);
+	}
 }
