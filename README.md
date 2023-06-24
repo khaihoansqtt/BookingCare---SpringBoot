@@ -7,11 +7,14 @@ Build this project to solve the problems that are facing in finding and booking 
 
 # Main function
 Booking care has the following functions:
-- Search for doctors by medical record, specialty, clinic, location, price...
-- Recommend outstanding doctors for users to refer to and choose from.
-- Book an appointment with a doctor of your choice.
-- Manage patient information and medical records of doctors.
-- Save information about the patient's medical record for follow-up visits.
+-	This is API of a website to help patients easily choose medical services from a network of qualified specialists.
+-	Authentication and authorization with Json Web Token (JWT) and Spring Security.
+-	Recommend outstanding doctors, specialties, clinics, categories on homepage for users to refer to and choose from.
+-	Users can search doctors they want to book by keyword such as name, address, specialty, diseases, price...
+-	Patient can book a doctor and have an appointment with doctor.
+-	Doctors can view information about their patients, including medical history.
+-	Doctor can save information about diseases of patient in history for follow-up visits.
+-	Doctor can send a email to patient (can attach file) to announce about their illness.
 
 # Used technology
 This project uses the following technologies:
